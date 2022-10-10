@@ -9,7 +9,7 @@
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
-
+#include<windows.h>
 #include <arpa/inet.h>
 
 //#define SIZE 1024
@@ -22,8 +22,9 @@ void report(struct sockaddr_in *serverAddress);
 void getHTML(){
     FILE *fp;
     fp=fopen("config.txt", "r");
-
-    //char c[100];
+     
+//     char c[100];
+	
     char holder;
     int line=0;
     while((holder=fgetc(fp)) != EOF) {
