@@ -16,7 +16,7 @@
 #define BACKLOG 10  // Passed to listen()
 //........................getting data from config.txt..................................//
 int port;  // for getting port no 
-char html[100];   //for getting the address of html file
+char html[1000];   //for getting the address of html file
 //.....................................................................................//
 void report(struct sockaddr_in *serverAddress);
 void getHTML(){
