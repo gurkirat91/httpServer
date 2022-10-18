@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <errno.h>
-#include <unistd.h>
+#include <unistd.h> // for close() call 
 #include <netdb.h> // for getnameinfo()
 
 // Usual socket headers
